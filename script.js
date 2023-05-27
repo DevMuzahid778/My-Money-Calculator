@@ -14,5 +14,10 @@ document.getElementById("Calculate").addEventListener("click", function(){
     const TotalExpense = FoodCost + RentCost + ClothesCost;
     const TotalCost = document.getElementById("TotalCost")
     TotalCost.innerText = TotalExpense;
+
+
+    const NewBalance = IncomeAmount - TotalExpense;
+    const Balance = document.getElementById("Balance");
+    Balance.innerText = NewBalance;
     
 })
